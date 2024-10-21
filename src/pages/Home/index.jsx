@@ -1,26 +1,26 @@
 
 import { useRef } from 'react'
 import api from '../../pages/services/api'
-import { Title, Container, ContainerInputs, Button, TopBackground, Form, Input, InputLabel } from './styles'
+import { Title, Container, ContainerInputs, TopBackground, Form, Input, InputLabel } from './styles'
 
 import UsersImage from '../../assets/users.png'
+import Button from '../../components/Button'
 
 function Home() {
-const inputName = useRef()
-const inputAge = useRef()
-const inputEmail = useRef()
+  const inputName = useRef()
+  const inputAge = useRef()
+  const inputEmail = useRef()
 
-async function registerNewUser() {
-const data = await api.post('/usuarios',{
+  async function registerNewUser() {
+    await api.post('/usuarios', {
 
-  email: inputEmail.current.value,
-  age: parseInt (inputAge.current.value),
-  name: inputName.current.value
-  
-})
+      email: inputEmail.current.value,
+      age: parseInt(inputAge.current.value),
+      name: inputName.current.value
 
-console.log(data)
-}
+    })
+
+  }
 
   return (
     <Container>
@@ -34,28 +34,28 @@ console.log(data)
         <Title>Cadastrar Usuário</Title>
 
         <ContainerInputs>
-            <div>
-              <InputLabel>
-                Nome<span> *</span>
-              </InputLabel>
-              <Input type='text' placeholder='Nome do Usuário' ref={inputName}/>
-            </div>
+          <div>
+            <InputLabel>
+              Nome<span> *</span>
+            </InputLabel>
+            <Input type='text' placeholder='Nome do Usuário' ref={inputName} />
+          </div>
 
-            <div>
+          <div>
 
-              <InputLabel>
-                Idade<span> *</span>
-              </InputLabel>
-              <Input type='number' placeholder='Idade do Usuário' ref={inputAge}/>
+            <InputLabel>
+              Idade<span> *</span>
+            </InputLabel>
+            <Input type='number' placeholder='Idade do Usuário' ref={inputAge} />
 
-            </div>
+          </div>
         </ContainerInputs>
 
-        <div style={{ width: '100%'}}>
+        <div style={{ width: '100%' }}>
           <InputLabel>
             E-mail<span> *</span>
           </InputLabel>
-          <Input type='email' placeholder='E-mail do Usuário' ref={inputEmail}/>
+          <Input type='email' placeholder='E-mail do Usuário' ref={inputEmail} />
         </div>
 
 
