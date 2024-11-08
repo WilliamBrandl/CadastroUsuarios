@@ -1,8 +1,23 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+# Nome do Projeto
+Cadastro de Usuários
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Descrição
+"Esta tela de cadastro foi desenvolvida usando React, com foco em uma interface intuitiva e responsiva.
+Ela permite aos usuários inserirem informações básicas de forma prática, validando os dados em tempo real
+para garantir que o formulário esteja completo e correto antes do envio. Componho o formulário com componentes reutilizáveis,
+o que facilita tanto a manutenção quanto a expansão da funcionalidade, caso mais campos precisem ser adicionados no futuro.
+O design prioriza a usabilidade e a simplicidade, assegurando uma experiência de cadastro suave e eficiente."
+
+
+## Funcionalidades
+Cadastramento de Usuários
+
+## Tecnologias
+
+REACT
+
+"Html,Css,JavaScript e React"
+
+
